@@ -26,5 +26,32 @@ The goal of this project is to:
 
 To find servers that expose FTP banners allowing anonymous access, I used this search query:
 
-```text
+```
 services.service_name: "ftp" AND services.ftp.banner: "anonymous"
+```
+## Steps
+1. Identified Target:
+   - From the results, I selected an IP address that responded with a 220 FTP banner indicating anonymous access.
+
+2. Connected via FTP:
+   - In my terminal:
+     ftp <target_ip>
+   - When prompted:
+     Username: anonymous
+     Password: [press Enter]
+
+3. Listed Directory Contents:
+   - ls
+
+4. Downloaded a File (if allowed):
+   - get example.txt
+
+##  Reference Notes
+
+You can view my full notes and step-by-step demonstration in the following PDF:
+
+[📄 Censys.pdf](https://github.com/khajaazhar/censys_anonftp-scan/blob/main/Censys.pdf)
+
+## About Me
+ Khaja Azhar Uddin 
+ [LinkedIn – Khaja Azhar](https://www.linkedin.com/in/khajaazhar)
